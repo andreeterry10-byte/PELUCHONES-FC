@@ -237,8 +237,10 @@ nav a:hover::after {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 15px 0;
-    text-align: center;
+    padding: 15px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* ESCUDO */
@@ -246,6 +248,7 @@ nav a:hover::after {
     width: 55px;
     height: auto;
     margin-bottom: 10px;
+    display: block;
 }
 
 /* LINKS */
@@ -296,4 +299,47 @@ nav a:hover::after {
     .nav-links.active {
         display: flex;
     }
+}
+/* SECCIÓN PLANTEL */
+#plantel {
+    padding: 60px 20px;
+}
+
+/* GRID */
+.plantel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+@media (max-width: 768px) {
+    .navbar {
+        padding-top: 20px;
+    }
+
+    .nav-logo img {
+        width: 45px;
+        margin-bottom: 15px;
+    }
+}
+
+/* SECCIÓN PLANTEL */
+#plantel {
+    padding: 60px 20px;
+}
+
+/* GRID */
+.plantel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 480px) {
+    .plantel-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+section {
+    scroll-margin-top: 140px;
 }
