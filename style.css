@@ -476,55 +476,35 @@ body {
     }
 }
 
-/* ============================= */
-/*   ANIMACION CEL: SLIDE INFO   */
-/* ============================= */
+@media (max-width: 768px) {
 
-/* PC → FLIP NORMAL */
-@media (hover: hover) {
-    .flip-inner {
-        transition: transform 0.7s ease;
-        transform-style: preserve-3d;
-    }
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+        align-items: center;
+        gap: 15px;
 
-    .flip-card:hover .flip-inner {
-        transform: rotateY(180deg);
-    }
-}
-
-/* CELULAR → SLIDE + FADE */
-@media (hover: none) {
-
-    .flip-card {
-        overflow: hidden;
-    }
-
-    .flip-inner {
-        transform: none !important;
-    }
-
-    .flip-back {
-        position: relative;
+        /* ANIMACIÓN */
         max-height: 0;
         opacity: 0;
-        transform: translateY(20px);
+        overflow: hidden;
+        transform: translateY(-10px);
         transition: 
             max-height 0.4s ease,
             opacity 0.3s ease,
             transform 0.3s ease;
     }
 
-    /* CUANDO SE TOCA */
-    .flip-toggle:checked + .flip-inner .flip-back {
-        max-height: 300px;
+    /* CUANDO SE ABRE */
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        max-height: 500px;
         opacity: 1;
         transform: translateY(0);
     }
-
-    /* FRENTE SIEMPRE VISIBLE */
-    .flip-front {
-        position: relative;
-    }
 }
+
+
 
 
