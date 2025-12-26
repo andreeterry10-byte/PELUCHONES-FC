@@ -231,26 +231,6 @@ nav a:hover::after {
     width: 100%;
 }
 
-/* NAVBAR */
-.navbar {
-    background-color: #000000;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 15px 0 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* ESCUDO */
-.nav-logo img {
-    width: 55px;
-    height: auto;
-    margin-bottom: 10px;
-    display: block;
-}
-
 /* LINKS */
 .nav-links {
     list-style: none;
@@ -280,11 +260,6 @@ nav a:hover::after {
 
 /* 📱 MOBILE */
 @media (max-width: 768px) {
-
-    .nav-logo img {
-        width: 45px;
-    }
-
     .menu-toggle {
         display: block;
     }
@@ -310,16 +285,6 @@ nav a:hover::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
-}
-@media (max-width: 768px) {
-    .navbar {
-        padding-top: 20px;
-    }
-
-    .nav-logo img {
-        width: 45px;
-        margin-bottom: 15px;
-    }
 }
 
 /* SECCIÓN PLANTEL */
