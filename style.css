@@ -477,26 +477,37 @@ body {
 }
 
 /* ============================= */
-/*  ANIMACION FUNDADORES + EQUIPO */
-/*        SOPORTE CELULAR        */
+/*     FLIP REAL CEL + PC        */
 /* ============================= */
 
-/* PC: hover normal */
+.flip-card {
+    position: relative;
+    perspective: 1000px;
+}
+
+/* ocultar checkbox */
+.flip-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* animación */
+.flip-inner {
+    transition: transform 0.7s ease;
+    transform-style: preserve-3d;
+}
+
+/* PC */
 @media (hover: hover) {
     .flip-card:hover .flip-inner {
         transform: rotateY(180deg);
     }
 }
 
-/* CELULAR: tap (active) */
-@media (hover: none) {
-    .flip-card:active .flip-inner {
-        transform: rotateY(180deg);
-    }
-
-    .flip-inner {
-        transition: transform 0.6s ease;
-    }
+/* CEL: tap */
+.flip-toggle:checked + .flip-inner {
+    transform: rotateY(180deg);
 }
 
 
