@@ -477,63 +477,6 @@ body {
 }
 
 
-/* ============================= */
-/*      NAV HAMBURGUESA OK       */
-/* ============================= */
-
-.navbar {
-    background-color: #000;
-    padding: 15px;
-    border-bottom: 2px solid #00ff99;
-}
-
-/* HEADER */
-.nav-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-title {
-    color: #00ff99;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* CHECKBOX */
-#nav-toggle {
-    display: none;
-}
-
-/* BOTON HAMBURGUESA */
-.nav-btn {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-}
-
-.nav-btn span {
-    width: 25px;
-    height: 3px;
-    background-color: #00ff99;
-    display: block;
-}
-
-/* MENU */
-.nav-menu {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 15px;
-}
-
-.nav-menu a {
-    color: #00ff99;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 
 
 
