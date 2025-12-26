@@ -2,176 +2,331 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PELUCHONES FC</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortout icon" type="img/x-icon" href="Img/PELUCHONES FC.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <!--HEADER-->
-    <header>
-        <h1>PELUCHONES FC</h1>
-        <p>NUESTRA PASIÓN NUESTRO ESCUDO</p>
-    </header>
 
-    <!--NAV-->
-    <nav class="navbar">
-    <button class="menu-toggle" id="menu-toggle">☰</button>
-    <ul class="nav-links" id="nav-links">
-        <li><a href="#historia">HISTORIA</a></li>
-        <li><a href="#fundadores">FUNDADORES</a></li>
-        <li><a href="#plantel">PLANTEL</a></li>
-        <li><a href="#logros">LOGROS</a></li>
-        <li><a href="#contacto">CONTACTO</a></li>
-        
-    </ul>
+<header class="header">
+    <div class="logo">
+        <img src="img/PELUCHONES FC.png" alt="Escudo de los PELUCHONES FC">
+        <h1>PELUCHONES FC</h1>
+        <p>NUESTRA PASIÓN, NUESTRA ESCUDO</p>
+    </div>
+</header>
+
+<nav class="nav">
+    <a href="#historia">HISTORIA</a>
+    <a href="#fundadores">FUNDADORES</a>
+    <a href="#plantel">PLANTEL</a>
+    <a href="#galeria">GALERIA</a>
 </nav>
 
-<script>
-    const toggle = document.getElementById("menu-toggle");
-    const links = document.getElementById("nav-links");
+<section id="HISTORIA" class="section">
+    <h2>HISTORIA DE CLUB</h2>
+    <p>
+    Fue creado por 4 alumnos de San Francisco Solano en el año 2018, quienes se reunieron por la noche para realizar una videoconferencia y coordinar el nombre del equipo y el diseño del escudo. 
+    Durante la sesión, compartieron ideas y expresaron sus preferencias, trabajando juntos para crear una identidad unificada para el equipo. 
+    A través de debates y colaboración, lograron llegar a un consenso que refleja la espiritualidad y las metas del grupo, acordando una competencia interna entre los fundadores. 
+    Durante el proceso, cada miembro aportó su creatividad única, fusionando sus talentos individuales para dar vida a la visión colectiva del equipo. 
+    La emoción y el entusiasmo se intensificaron a medida que delineaban los detalles de la competencia interna, comprometiéndose a hacer de ella una experiencia memorable que fortalecería su vínculo como fundadores del equipo. Durante el desarrollo de la competencia interna, los fundadores se dedicaron a pulir cada aspecto, desde la elección de los colores distintivos hasta la elaboración de la estrategia de promoción. 
+    La dedicación y el esfuerzo invertido en este proceso consolidaron aún más su compromiso y determinación de llevar al equipo hacia el éxito, infundiendo un sentido de comunidad y colaboración que se reflejaría en cada aspecto de sus futuras actividades.
+    </p>
+</section>
 
-    toggle.addEventListener("click", () => {
-        links.classList.toggle("active");
-    });
+<section id="fundadores" class="section dark">
+    <h2>FUNDADORES</h2>
 
-    document.querySelectorAll(".nav-links a").forEach(link => {
-        link.addEventListener("click", () => {
-            links.classList.remove("active");
-        });
-    });
-</script>
+    <div class="plantel">
 
-    <!--HISTRORIA-->
-    <section id="HISTORIA">
-        <h2 class="title">Nuestra Historia</h2>
-        <div class="card">
-            <p>
-                Fue creado por 4 alumnos de San Francisco Solano en el año 2018, quienes se reunieron por la noche para realizar una videoconferencia y coordinar el nombre del equipo y el diseño del escudo. 
-                Durante la sesión, compartieron ideas y expresaron sus preferencias, trabajando juntos para crear una identidad unificada para el equipo. A través de debates y colaboración, lograron llegar a un consenso que refleja la espiritualidad y las metas del grupo, acordando una competencia interna entre los fundadores. 
-                Durante el proceso, cada miembro aportó su creatividad única, fusionando sus talentos individuales para dar vida a la visión colectiva del equipo. La emoción y el entusiasmo se intensificaron a medida que delineaban los detalles de la competencia interna, comprometiéndose a hacer de ella una experiencia memorable que fortalecería su vínculo como fundadores del equipo. 
-                Durante el desarrollo de la competencia interna, los fundadores se dedicaron a pulir cada aspecto, desde la elección de los colores distintivos hasta la elaboración de la estrategia de promoción. La dedicación y el esfuerzo invertido en este proceso consolidaron aún más su compromiso y determinación de llevar al equipo hacia el éxito, infundiendo un sentido de comunidad y colaboración que se reflejaría en cada aspecto de sus futuras actividades.
-            </p>
-        </div>
-    </section>
-
-    <!--FUNDADORES-->
-    <section id="fundadores">
-        <h2 class="title">Nuestros Fundadores</h2>
-        
-        <div class="Fundadores">
-            <div class="fundadores">
-                <div class="Number">1</div>
-                <h3>TERRY</h3>
-                <p>Muralla del equipo</p>
-            </div>
-
-            <div class="fundadores">
-                <div class="Number">4</div>
-                <h3>JAIR</h3>
-                <p>Firme y seguro</p>
-            </div>
-
-            <div class="fundadores">
-                <div class="Number">6</div>
-                <h3>ENRIQUE</h3>
-                <p>Firme y seguro</p>
-            </div>
-
-            <div class="fundadores">
-                <div class="Number">7</div>
-                <h3>JUAN MARTIN</h3>
-                <p>Goleador</p>
+        <div class="flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h3>Fundador 1</h3>
+                    <p>Presidente</p>
+                </div>
+                <div class="flip-back">
+                    <h3>Historia</h3>
+                    <p>
+                        Fundador de Peluchones FC, creador del proyecto
+                        y principal impulsor del club desde sus inicios.
+                    </p>
+                </div>
             </div>
         </div>
-    </section>
 
-    <!--PLANTEL-->
-    <section id="plantel">
-        <h2 class="title">Nuestros equipo</h2>
-        
-        <div class="plante-grid">
-            <div class="plantel-card">
-                <span class="number">1</span>
-                <h3>TERRY</h3>
-                <p>ARQUERO</p>
-            </div>
-
-            <div class="plantel-card">
-                <span class="number">3</span>
-                <h3>EDUARDO</h3>
-                <p>DEFENSA</p>
-            </div>
-
-             <div class="plantel-card">
-               <span class="number">4</span>
-                <h3>JAIR</h3>
-                <p>DEFENSA</p>
-            </div>
-
-             <div class="plantel-card">
-                <span class="number">6</span>
-                <h3>ENRIQUE</h3>
-                <p>VOLANTE DE CONTENCIÓN</p>
-            </div>
-
-             <div class="plantel-card">
-                <span class="number">7</span>
-                <h3>JUAN MARTIN</h3>
-                <p>DELANTERO</p>
-            </div>
-
-           <div class="plantel-card">
-                <span class="number">10</span>
-                <h3>OMAR</h3>
-                <p>VOLANTE OFENCIVO</p>
-            </div>
-
-            <div class="plantel-card">
-                <span class="number">16</span>
-                <h3>JESUS D.</h3>
-                <p>DEFENSA</p>
-            </div>
-
-            <div class="plantel-card">
-                <span class="number">18</span>
-                <h3>MARTIN</h3>
-                <p>EXTREMO DERECHO</p>
-            </div>
-
-            <div class="plantel-card">
-                <span class="number">28</span>
-                <h3>JHOJAN</h3>
-                <p>EXTREMO IZQUIERDO</p>
+        <div class="flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h3>Fundador 2</h3>
+                    <p>Vicepresidente</p>
+                </div>
+                <div class="flip-back">
+                    <h3>Historia</h3>
+                    <p>
+                        Encargado de la organización y crecimiento del club,
+                        siempre apostando por la unión del equipo.
+                    </p>
+                </div>
             </div>
         </div>
-    </section>
-     <!-- LOGROS -->
-    <section id="logros">
-        <h2 class="title">Logros</h2>
-        <div class="card">
-            <ul>
-                <li>🏆 </li>
-                <li>🥈 </li>
-                <li>⚽ </li>
-            </ul>
-        </div>
-    </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto">
-        <h2 class="title">Contacto</h2>
-        <div class="card">
-            <p>📧 peluchonesfc@gmail.com</p>
-            <p>📍 Comas - Lima</p>
+        <div class="flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h3>Fundador 3</h3>
+                    <p>Director Deportivo</p>
+                </div>
+                <div class="flip-back">
+                    <h3>Historia</h3>
+                    <p>
+                        Responsable del enfoque deportivo y la identidad
+                        competitiva de Peluchones FC.
+                    </p>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
-        © 2027 PELUCHONES FC | NUESTRA PASIÓN NUESTRO ESCUDO
-    </footer>
+        <div class="flip-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h3>Fundador 4</h3>
+                    <p>Director Deportivo</p>
+                </div>
+                <div class="flip-back">
+                    <h3>Historia</h3>
+                    <p>
+                        Responsable del enfoque deportivo y la identidad
+                        competitiva de Peluchones FC.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section id="plantel" class="section">
+    <h2>EQUIPO</h2>
+
+    <!-- ARQUEROS -->
+    <h3 class="posicion">ARQUERO</h3>
+    <div class="plantel">
+
+        <div class="flip-card jugador-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h3>ARQUERO</h3>
+                    <p>TERRY</p>
+                </div>
+                <div class="flip-back">
+                    <h3>ESTADISTICAS</h3>
+                    <ul>
+                        <li>REF: </li>
+                        <li>POS: </li>
+                        <li>DIV: </li>
+                        <li>HAN: </li>
+                        <li>KIC: </li>
+                        <li>SPD: </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- DEFENSAS -->
+    <h3 class="posicion">DEFENSAS</h3>
+    <div class="plantel">
+
+        <div class="flip-card jugador-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h3>DEFENSAS</h3>
+                    <p>EDUARDO</p>
+                </div>
+                <div class="flip-back">
+                    <h3>ESTADISTICAS</h3>
+                    <ul>
+                        <li>PAC: </li>
+                        <li>DEF: </li>
+                        <li>PHY: </li>
+                        <li>STA: </li>
+                        <li>INT: </li>
+                        <li>STR: </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card jugador-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h3>DEFENSAS</h3>
+                    <p>JAIR</p>
+                </div>
+                <div class="flip-back">
+                    <h3>ESTADISTICAS</h3>
+                    <ul>
+                        <li>PAC: </li>
+                        <li>DEF: </li>
+                        <li>PHY: </li>
+                        <li>STA: </li>
+                        <li>INT: </li>
+                        <li>STR: </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card jugador-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h3>DEFENSAS</h3>
+                    <p>JESUS DAVID</p>
+                </div>
+                <div class="flip-back">
+                    <h3>ESTADISTICAS</h3>
+                    <ul>
+                        <li>PAC: </li>
+                        <li>DEF: </li>
+                        <li>PHY: </li>
+                        <li>STA: </li>
+                        <li>INT: </li>
+                        <li>STR: </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MEDIOCAMPISTAS -->
+    <h3 class="posicion">Mediocampistas</h3>
+    <div class="plantel">
+
+        <div class="flip-card jugador-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h3>MEDIOCAMPISTAS</h3>
+                    <p>ENRIQUE</p>
+                </div>
+                <div class="flip-back">
+                    <h3>ESTADISTICAS</h3>
+                    <ul>
+                        <li>PAC: </li>
+                        <li>PAS: </li>
+                        <li>DRI: </li>
+                        <li>DEF: </li>
+                        <li>PHY: </li>
+                        <li>VIS: </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card jugador-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h3>MEDIOCAMPISTAS</h3>
+                    <p>OMAR</p>
+                </div>
+                <div class="flip-back">
+                    <h3>ESTADISTICAS</h3>
+                    <ul>
+                        <li>PAC: </li>
+                        <li>PAS: </li>
+                        <li>DRI: </li>
+                        <li>DEF: </li>
+                        <li>PHY: </li>
+                        <li>VIS: </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- DELANTEROS -->
+    <h3 class="posicion">Delanteros</h3>
+    <div class="plantel">
+
+        <div class="flip-card jugador-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h3>EXTREMO IZQUIERDO</h3>
+                    <p>JHOJAN</p>
+                </div>
+                <div class="flip-back">
+                    <h3>ESTADISTICAS</h3>
+                    <ul>
+                        <li>PAC: </li>
+                        <li>SHO: </li>
+                        <li>DRI: </li>
+                        <li>PAS: </li>
+                        <li>PHY: </li>
+                        <li>FIN: </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card jugador-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h3>DELANTERO CENTRO</h3>
+                    <p>JUAN MARTIN</p>
+                </div>
+                <div class="flip-back">
+                    <h3>ESTADISTICAS</h3>
+                    <ul>
+                        <li>PAC: </li>
+                        <li>PAS: </li>
+                        <li>DRI: </li>
+                        <li>DEF: </li>
+                        <li>PHY: </li>
+                        <li>VIS: </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card jugador-card">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h3>ESTREMO DERCHO</h3>
+                    <p>MARTIN</p>
+                </div>
+                <div class="flip-back">
+                    <h3>ESTADISTICAS</h3>
+                    <ul>
+                        <li>PAC: </li>
+                        <li>PAS: </li>
+                        <li>DRI: </li>
+                        <li>DEF: </li>
+                        <li>PHY: </li>
+                        <li>VIS: </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="galeria" class="section dark">
+    <h2>GALERIA</h2>
+    <div class="galeria">
+        <div class="foto">Foto 1</div>
+        <div class="foto">Foto 2</div>
+        <div class="foto">Foto 3</div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 PELUCHONES FC</p>
+</footer>
+    
 
 </body>
 </html>
-    
