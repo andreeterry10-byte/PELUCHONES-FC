@@ -476,32 +476,92 @@ body {
     }
 }
 
+
+/* ============================= */
+/*      NAV HAMBURGUESA OK       */
+/* ============================= */
+
+.navbar {
+    background-color: #000;
+    padding: 15px;
+    border-bottom: 2px solid #00ff99;
+}
+
+/* HEADER */
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    color: #00ff99;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* CHECKBOX */
+#nav-toggle {
+    display: none;
+}
+
+/* BOTON HAMBURGUESA */
+.nav-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.nav-btn span {
+    width: 25px;
+    height: 3px;
+    background-color: #00ff99;
+    display: block;
+}
+
+/* MENU */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.nav-menu a {
+    color: #00ff99;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ============================= */
+/*          CELULAR              */
+/* ============================= */
+
 @media (max-width: 768px) {
 
-    .nav-links {
+    .nav-btn {
         display: flex;
+    }
+
+    .nav-menu {
+        display: none;
         flex-direction: column;
-        width: 100%;
-        margin-top: 15px;
         align-items: center;
         gap: 15px;
-
-        /* ANIMACIÓN */
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
-        transform: translateY(-10px);
-        transition: 
-            max-height 0.4s ease,
-            opacity 0.3s ease,
-            transform 0.3s ease;
+        margin-top: 15px;
     }
 
     /* CUANDO SE ABRE */
-    #menu-toggle:checked + .menu-icon + .nav-links {
-        max-height: 500px;
-        opacity: 1;
-        transform: translateY(0);
+    #nav-toggle:checked ~ .nav-menu {
+        display: flex;
+    }
+
+    .nav-menu a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #00ff99;
     }
 }
 
