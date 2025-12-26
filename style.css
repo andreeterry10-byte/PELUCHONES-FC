@@ -505,3 +505,28 @@ body {
     }
 }
 
+
+/* ============================= */
+/*  ANIMACION FUNDADORES + EQUIPO */
+/*        SOPORTE CELULAR        */
+/* ============================= */
+
+/* PC: hover normal */
+@media (hover: hover) {
+    .flip-card:hover .flip-inner {
+        transform: rotateY(180deg);
+    }
+}
+
+/* CELULAR: tap (active) */
+@media (hover: none) {
+    .flip-card:active .flip-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-inner {
+        transition: transform 0.6s ease;
+    }
+}
+
+
