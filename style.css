@@ -405,131 +405,44 @@ body {
 }
 
 /* ============================= */
-/*        NAV HAMBURGUESA        */
+/*          NAV BASE             */
 /* ============================= */
 
-#menu-toggle {
-    display: none;
-}
-
-/* NAV BASE */
-.nav {
-    background-color: #000;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* ICONO ☰ */
-.menu-icon {
-    display: none;
-    font-size: 30px;
-    color: #00ff99;
-    cursor: pointer;
-    user-select: none;
-}
-
-/* LINKS */
-.nav-links {
-    display: flex;
-    gap: 25px;
-}
-
-/* ESCRITORIO */
-@media (min-width: 769px) {
-    .nav {
-        flex-direction: row;
-        justify-content: center;
-    }
-}
-
-/* CELULAR */
-@media (max-width: 768px) {
-
-    .menu-icon {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 15px;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .nav-links a {
-        width: 90%;
-        max-width: 320px;
-        text-align: center;
-        padding: 12px;
-        border: 1px solid #00ff99;
-        border-radius: 6px;
-        background-color: #000;
-    }
-
-    /* 🔥 ESTA ES LA CLAVE */
-    #menu-toggle:checked + .menu-icon + .nav-links {
-        display: flex;
-    }
-}
-
-/*        NAV FIX TOTAL          */
-/* ============================= */
-
-.navbar {
+.header {
     background: #000;
     border-bottom: 2px solid #00ff99;
-    padding: 12px 16px;
-}
-
-/* HEADER */
-.nav-header {
+    padding: 15px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
-.nav-title {
+.logo {
     color: #00ff99;
     font-weight: bold;
     font-size: 18px;
 }
 
-/* OCULTAR CHECKBOX */
-.nav-toggle {
-    display: none;
-}
-
-/* HAMBURGUESA */
-.nav-btn {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.nav-btn span {
-    width: 26px;
-    height: 3px;
-    background: #00ff99;
-    border-radius: 2px;
-}
-
-/* MENU PC */
-.nav-menu {
+/* NAV PC */
+.nav {
     display: flex;
-    justify-content: center;
     gap: 30px;
-    margin-top: 12px;
 }
 
-.nav-menu a {
+.nav a {
     color: #00ff99;
     text-decoration: none;
     font-weight: bold;
+}
+
+/* BOTON */
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #00ff99;
+    font-size: 26px;
+    cursor: pointer;
 }
 
 /* ============================= */
@@ -538,33 +451,31 @@ body {
 
 @media (max-width: 768px) {
 
-    .nav-btn {
-        display: flex;
+    .menu-btn {
+        display: block;
     }
 
-    .nav-menu {
+    .nav {
         display: none;
         flex-direction: column;
-        align-items: center;
         width: 100%;
-        gap: 0;
-        margin-top: 12px;
+        background: #000;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        border-top: 2px solid #00ff99;
     }
 
-    /* SOLO CUANDO SE TOCA ☰ */
-    .nav-toggle:checked ~ .nav-menu {
+    .nav a {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #00ff99;
+    }
+
+    .nav.active {
         display: flex;
     }
-
-    .nav-menu a {
-        padding: 12px 0;
-        width: 100%;
-        text-align: center;
-        border-top: 1px solid #00ff99;
-    }
 }
-
-
 
 
 
