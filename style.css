@@ -408,11 +408,8 @@ body {
 /*        NAV HAMBURGUESA        */
 /* ============================= */
 
-/* OCULTAR CHECKBOX REAL */
 #menu-toggle {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
+    display: none;
 }
 
 /* NAV BASE */
@@ -424,7 +421,7 @@ body {
     align-items: center;
 }
 
-/* ICONO HAMBURGUESA */
+/* ICONO ☰ */
 .menu-icon {
     display: none;
     font-size: 30px;
@@ -439,7 +436,7 @@ body {
     gap: 25px;
 }
 
-/* PC */
+/* ESCRITORIO */
 @media (min-width: 769px) {
     .nav {
         flex-direction: row;
@@ -473,8 +470,8 @@ body {
         background-color: #000;
     }
 
-    /* MOSTRAR MENU CUANDO SE ACTIVA */
-    #menu-toggle:checked ~ .nav .nav-links {
+    /* 🔥 ESTA ES LA CLAVE */
+    #menu-toggle:checked + .menu-icon + .nav-links {
         display: flex;
     }
 }
