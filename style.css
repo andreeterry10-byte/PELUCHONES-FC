@@ -534,36 +534,6 @@ body {
     font-weight: bold;
 }
 
-/* ============================= */
-/*          CELULAR              */
-/* ============================= */
-
-@media (max-width: 768px) {
-
-    .nav-btn {
-        display: flex;
-    }
-
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        margin-top: 15px;
-    }
-
-    /* CUANDO SE ABRE */
-    #nav-toggle:checked ~ .nav-menu {
-        display: flex;
-    }
-
-    .nav-menu a {
-        padding: 10px 0;
-        width: 100%;
-        text-align: center;
-        border-top: 1px solid #00ff99;
-    }
-}
 
 
 
