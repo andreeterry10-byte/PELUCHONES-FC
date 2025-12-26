@@ -332,54 +332,56 @@ body {
     padding-bottom: 3px;
 }
 
-/* ============================= */
-/*        RESPONSIVE CEL         */
-/* ============================= */
-
 @media (max-width: 768px) {
 
-    /* HEADER */
-    .logo h1 {
-        font-size: 26px;
-    }
-
-    .logo img {
-        width: 90px;
-    }
-
-    /* NAV */
-    .nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav a {
-        font-size: 16px;
-    }
-
-    /* SECCIONES */
-    .section {
-        padding: 35px 15px;
-    }
-
-    /* PLANTEL */
+    /* CONTENEDOR */
     .plantel {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 25px;
     }
 
-    /* TARJETAS FLIP */
+    /* TARJETA */
     .flip-card,
     .jugador-card {
-        width: 90%;
-        max-width: 280px;
-        height: 300px;
-        margin-bottom: 25px;
+        width: 95%;
+        max-width: 340px;
+        height: auto;
+        perspective: none;
     }
 
-    /* TEXTO */
-    .flip-front h3,
-    .flip-back h3 {
+    .flip-inner {
+        transform: none !important;
+        transition: none;
+        display: flex;
+        flex-direction: column;
+        position: static;
+    }
+
+    /* CARAS */
+    .flip-front,
+    .flip-back {
+        position: static;
+        transform: none;
+        backface-visibility: visible;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        border: 2px solid #00ff99;
+    }
+
+    .flip-front {
+        border-bottom: none;
+        background-color: #000;
+    }
+
+    .flip-back {
+        background-color: #0b0b0b;
+    }
+
+    /* TEXTOS */
+    .flip-front h3 {
         font-size: 18px;
     }
 
@@ -387,36 +389,17 @@ body {
         font-size: 14px;
     }
 
-    .flip-back p,
+    .flip-back h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
     .flip-back li {
         font-size: 13px;
     }
 
-    /* GALERIA */
-    .galeria {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .foto {
-        width: 90%;
-        height: 180px;
-    }
-
-    /* POSICION TITULO */
-    .posicion {
-        font-size: 18px;
-        text-align: center;
-    }
-}
-
-/* SOPORTE TOUCH (CELULAR) */
-@media (hover: none) {
-    .flip-card:hover .flip-inner {
-        transform: none;
-    }
-
-    .flip-card:active .flip-inner {
-        transform: rotateY(180deg);
+    /* QUITAR EFECTOS */
+    .flip-card:hover {
+        box-shadow: none;
     }
 }
