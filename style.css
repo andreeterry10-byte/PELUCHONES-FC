@@ -476,3 +476,32 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+        align-items: center;
+        gap: 15px;
+
+        /* ANIMACIÓN */
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transform: translateY(-10px);
+        transition: 
+            max-height 0.4s ease,
+            opacity 0.3s ease,
+            transform 0.3s ease;
+    }
+
+    /* CUANDO SE ABRE */
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        max-height: 500px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
