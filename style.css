@@ -408,8 +408,11 @@ body {
 /*        NAV HAMBURGUESA        */
 /* ============================= */
 
+/* OCULTAR CHECKBOX REAL */
 #menu-toggle {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
 }
 
 /* NAV BASE */
@@ -421,12 +424,13 @@ body {
     align-items: center;
 }
 
-/* ICONO */
+/* ICONO HAMBURGUESA */
 .menu-icon {
     display: none;
-    font-size: 28px;
+    font-size: 30px;
     color: #00ff99;
     cursor: pointer;
+    user-select: none;
 }
 
 /* LINKS */
@@ -443,7 +447,7 @@ body {
     }
 }
 
-/* CEL */
+/* CELULAR */
 @media (max-width: 768px) {
 
     .menu-icon {
@@ -466,10 +470,11 @@ body {
         padding: 12px;
         border: 1px solid #00ff99;
         border-radius: 6px;
+        background-color: #000;
     }
 
-    /* CUANDO SE ABRE */
-    #menu-toggle:checked + .nav .nav-links {
+    /* MOSTRAR MENU CUANDO SE ACTIVA */
+    #menu-toggle:checked ~ .nav .nav-links {
         display: flex;
     }
 }
