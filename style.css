@@ -1,20 +1,25 @@
+/* =========================
+   RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   background: #0b0b0b;
-  color: #fff;
+  color: #ffffff;
 }
 
-/* NAV */
+/* =========================
+   NAVBAR
+========================= */
 .navbar {
   background: #000;
   border-bottom: 2px solid #1aff64;
-  padding: 15px;
+  padding: 15px 10px;
   text-align: center;
 }
 
@@ -27,72 +32,84 @@ body {
 .menu {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 16px;
+  flex-wrap: wrap;
   margin-top: 10px;
 }
 
 .menu a {
   color: #fff;
   text-decoration: none;
+  font-size: 0.95rem;
 }
 
-/* HERO - CORREGIDO CELULAR */
+/* =========================
+   HERO / INICIO
+========================= */
 .hero {
-  min-height: 100svh;
-  background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+  background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),
               url("../img/fondo.jpg") center / cover no-repeat;
+  padding: 120px 8% 140px;
+  text-align: center;
+
+  /* 🔥 FORZAMOS ORDEN VERTICAL */
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 60px 7% 80px;
 }
 
 .hero h1 {
-  font-size: clamp(2rem, 7vw, 3rem);
   color: #1aff64;
+  font-size: 2.4rem;
   line-height: 1.1;
 }
 
 .hero p {
-  font-size: clamp(1rem, 4.5vw, 1.3rem);
-  margin: 18px 0 30px;
+  margin: 20px 0 30px;
+  font-size: 1.1rem;
   max-width: 320px;
+  display: block; /* CLAVE */
 }
 
+/* BOTÓN */
 .btn {
   background: #1aff64;
   color: #000;
   padding: 14px 32px;
-  border-radius: 999px;
+  border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1rem;
+
+  display: inline-block; /* evita que se pegue */
 }
 
-/* SECCIONES */
+/* =========================
+   SECCIONES
+========================= */
 .section {
-  padding: 60px 6%;
+  padding: 70px 6%;
 }
 
 .section h2 {
   text-align: center;
   color: #1aff64;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .sub {
   text-align: center;
-  margin: 35px 0 20px;
+  margin: 35px 0 25px;
   color: #1aff64;
 }
 
-/* CARDS */
+/* =========================
+   CARDS (PLANTEL / HISTORIA)
+========================= */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
   justify-items: center;
 }
@@ -107,7 +124,7 @@ body {
 .card-inner {
   width: 100%;
   height: 100%;
-  transition: .8s;
+  transition: 0.7s;
   transform-style: preserve-3d;
 }
 
@@ -128,52 +145,65 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
   backface-visibility: hidden;
+  padding: 20px;
 }
 
 .card-front {
   color: #1aff64;
+  font-size: 1.1rem;
 }
 
 .card-back {
   transform: rotateY(180deg);
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
-/* PALMARES */
+/* =========================
+   PALMARÉS
+========================= */
 .palmares {
   list-style: none;
   text-align: center;
+  font-size: 1rem;
 }
 
 .palmares li {
   margin-bottom: 10px;
 }
 
-/* CONTACTO */
+/* =========================
+   CONTACTO
+========================= */
 .contact {
   text-align: center;
+  font-size: 0.95rem;
 }
 
-/* EXTRA CELULAR PEQUEÑO */
-@media (max-width: 380px) {
+/* =========================
+   RESPONSIVE CELULAR
+========================= */
+@media (max-width: 600px) {
+
   .hero {
-    padding: 70px 6% 90px;
+    padding: 100px 6% 120px;
   }
 
   .hero h1 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 
   .hero p {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
-}
 
-/* DESKTOP */
-@media (min-width: 1024px) {
-  .section {
-    padding: 80px 10%;
+  .menu {
+    gap: 12px;
+  }
+
+  .card {
+    height: 300px;
   }
 }
 
