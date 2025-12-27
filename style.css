@@ -162,3 +162,74 @@ body {
   text-align: center;
 }
 
+/* =========================
+   RESPONSIVE - CELULAR
+========================= */
+@media (max-width: 768px) {
+
+  /* NAV */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 5%;
+    gap: 10px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* HERO */
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    padding: 10px 22px;
+    font-size: 0.95rem;
+  }
+
+  /* SECCIONES */
+  .section {
+    padding: 70px 6%;
+  }
+
+  .center-title,
+  .position-title {
+    font-size: 1.4rem;
+  }
+
+  /* CARDS */
+  .cards {
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 260px;
+    height: 320px;
+  }
+
+  /* HISTORIA TEXTO */
+  .card-back p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  /* PALMARÉS */
+  .list li {
+    margin-bottom: 10px;
+  }
+
+  /* CONTACTO */
+  .contact p {
+    font-size: 0.95rem;
+  }
+}
+
