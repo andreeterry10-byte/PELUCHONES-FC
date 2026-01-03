@@ -13,7 +13,7 @@ html{
 }
 
 body{
-  background:#000000;
+  background:#0a0a0a;
   color:#ffffff;
 }
 
@@ -24,9 +24,9 @@ body{
   position:sticky;
   top:0;
   z-index:1000;
-  background:#020617;
+  background: #2dc91c;
   animation:navDrop .8s ease;
-  border-bottom:2px solid #22c55e;
+  border-bottom:2px solid #ffffff;
 }
 
 @keyframes navDrop{
@@ -50,7 +50,7 @@ body{
 .logo{
   font-size:22px;
   font-weight:800;
-  color:#22c55e;
+  color:#ffffff;
 }
 
 /* LINKS DESKTOP */
@@ -76,7 +76,7 @@ body{
   bottom:-6px;
   width:0;
   height:2px;
-  background:#22c55e;
+  background: #000000;
   transition:width .3s ease;
 }
 
@@ -95,7 +95,7 @@ body{
 .menu-icon span{
   width:26px;
   height:3px;
-  background:#22c55e;
+  background:#ffffff;
   transition:.4s;
 }
 
@@ -114,7 +114,7 @@ body{
     top:70px;
     left:0;
     width:100%;
-    background:#020617;
+    background:#000000;
     flex-direction:column;
     align-items:center;
     max-height:0;
@@ -151,14 +151,14 @@ section{
 }
 
 h2{
-  color:#22c55e;
+  color: #2dc91c;
   margin-bottom:30px;
   font-size:32px;
 }
 
 h3{
   margin:30px 0 15px;
-  color:#38bdf8;
+  color: #ffffff;
 }
 
 /* =====================================================
@@ -214,15 +214,16 @@ h3{
 }
 
 .flip-front{
-  background:#020617;
-  border:2px solid #22c55e;
+  background:#000000;
+  border:2px solid  #2dc91c;
 }
 
 .flip-back{
-  background:#22c55e;
-  color:#020617;
+  background:  #000000;
+  color: #ffffff;
   transform:rotateY(180deg);
   font-weight:bold;
+  border:2px solid  #2dc91c;
 }
 
 /* =====================================================
@@ -251,13 +252,13 @@ table{
 }
 
 th, td{
-  border:1px solid #22c55e;
+  border:1px solid  #2dc91c;
   padding:10px;
 }
 
 th{
-  background:#22c55e;
-  color:#020617;
+  background: #2dc91c;
+  color:#ffffff;
   font-weight:700;
 }
 
@@ -274,8 +275,8 @@ th{
 footer{
   padding:20px;
   text-align:center;
-  background:#020617;
-  border-top:2px solid #22c55e;
+  background: #2dc91c;
+  border-top:2px solid  #2dc91c;
   font-size:14px;
 }
 
